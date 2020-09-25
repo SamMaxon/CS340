@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" media="screen"> 
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+        <div class="topBar">
+            <a href="index.html"><h1 class="site-title">Movie Vault</h1></a>
+
+            <nav class="loginbar">
+                <ul class="loginlist">
+                <li class="loginitem navlink"> <a href= "login.html" > LOG IN </a></li>
+                <li class="loginitem navlink"> <a href= "signup_page.html" > SIGN UP </a> </li>
+            </nav>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navlist">
+            <li class="navitem navlink active"><a href="index.html">Home</a></li>
+            <li class="navitem navlink"> <a href= "../profile" > Profile</a> </li>
+            <li class="navitem navbar-search">
+                    <input type="text" id="navbar-search-input" placeholder="Search...">
+                    <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        
+        <div>
+            <form action="profile.html" method="POST">
+                    <label for="Username">Username</label>
+                    <input type="text" id="usernameEntry" name="username"><br><br>
+                    <label for="Password">Password</label>
+                    <input type="password" id="passwordEntry" name="password"><br><br>
+                    <input type="submit" value="Login">
+            </form>
+            <form action="signup_page.html">
+                <input type="submit" value="Signup">
+            </form>
+        </div>
+
+    </body>
+    
+</html>
