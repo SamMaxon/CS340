@@ -1,0 +1,16 @@
+<html>
+
+<h3>Join Groups</h3>
+<form id="joinGroup" action="/joinGroup" method="post">
+    Group: <select name="id">
+        {{#each group}}
+        <option value="{{id}}">{{groupName}}</option>
+        {{/each}}
+    </select><br>
+
+    Email: <input type="text" name="email" value={{email.email}} readonly> 
+    <input type="submit" value="Join">
+ </form>
+<br/>
+
+</html>

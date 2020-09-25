@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Movie Vault</title>
+    <link rel="stylesheet" href="/style.css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    {{#each jsscripts}}
+    <script src="/static/{{this}}"></script>
+    {{/each}}
+</head>
+<body>
+    <header>
+        <div class="topBar">
+            <a href="../movies"><h1 class="site-title">Movie Vault</h1></a>
+
+            <nav class="loginbar">
+                <ul class="loginlist">
+                <li class="loginitem navlink"> <a href= "../login" > LOG IN </a></li>
+                <li class="loginitem navlink"> <a href= "../signup" > SIGN UP </a> </li>
+                <li class="loginitem navlink"> <a href="../logout"  > LOG OUT </a> </li>
+            </nav>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navlist">
+            <li class="navitem navlink active"><a href="../movies">Home</a></li>
+            <li class="navitem navlink"> <a href= "../profile" > Profile</a> </li>
+			<li class="navitem navlink"> <a href= "../singleMovie" > Single Movie</a> </li>
+            <li class="navitem navbar-search">
+                    <input type="text" id="navbar-search-input" placeholder="Search...">
+                    <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+	{{{body}}}
+
+</body>
+</html>

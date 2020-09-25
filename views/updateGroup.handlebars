@@ -1,0 +1,17 @@
+<html>
+
+<h3>Update Group Name</h3>
+<form id="updateGroup" action="/updateGroup" method="post">
+    Group: <select name="id">
+        {{#each group}}
+        <option value="{{id}}">{{groupName}}</option>
+        {{/each}}
+    </select><br>
+
+    New Group Name: <input type="text" name="newGroupName">
+    Password: <input type="password" name="password" placeholder="password" > 
+    <input type="submit" value="Update">
+ </form>
+<br/>
+
+</html>

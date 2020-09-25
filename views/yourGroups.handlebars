@@ -1,0 +1,28 @@
+<html>
+
+<div class= "GroupInfo">
+    <h3>Your Groups </h3>
+    <table class= "group-info-table">
+        <tr>
+            <th>Group Name </th>
+        </tr>
+        <tr class="group-info-table-body">
+            {{#each groupName}}
+            <tr>
+                <td>{{groupName}}</td>
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+</div>
+
+<h3> <a href= "/joinGroup" > Join a Group </a> </h3>
+<h3> <a href= "/leaveGroup" > Leave a Group </a> </h3>
+<h3> <a href= "/deleteGroup" > Delete a Group (Requires Admin Password)</a> </h3>
+<h3> <a href= "/createGroup" > Create a Group</a> </h3>
+<h3> <a href= "/updateGroup" > Change Group Name</a> </h3>
+
+
+
+
+</html>

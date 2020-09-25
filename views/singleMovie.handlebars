@@ -1,0 +1,62 @@
+<html>
+
+<h1> {{title.title}} </h1>
+
+<div class= "castInfo">
+    <h3>Details: </h3>
+    <table class= "cast-info-table">
+        <tr>
+            <th>Cast: </th>
+        </tr>
+        <tr class="cast-info-table-body">
+            <tr>
+                <td>{{cast.actorName}}</td>
+            </tr>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+<div class= "movieInfo">
+
+    <table class= "movie-info-table">
+        <tr>
+            <th>Director: </th>
+            <th>Producer: </th>
+            <th>Gross Earnings: </th>
+            <th>Audience Score: </th>
+            <th>Critic Score: </th>
+        </tr>
+        <tr class="movie-info-table-body">
+            <tr>
+                <td>{{movie.director}}</td>
+                <td>{{movie.producer}}</td>
+                <td>{{movie.gross}}</td>
+                <td>{{movie.totalAudiScore}}</td>
+                <td>{{movie.totalCriticScore}}</td>
+            </tr>
+        </tr>
+    </table>
+</div>
+
+<div class= "movieRatings">
+    <h3>Reviews: </h3>
+    <table class= "movie-ratings-table">
+        <tr>
+            <th>Score: </th>
+            <th>Explanation </th>
+        </tr>
+        <tr class="movie-ratings-table-body">
+            {{#each rating_entry}}
+            <tr>
+                <td>{{score}}</td>
+                <td>{{explanation}}</td>
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+</div>
+
+
+</html>

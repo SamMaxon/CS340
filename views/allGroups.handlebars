@@ -1,0 +1,27 @@
+<html>
+
+<h1> All Groups </h1>
+
+<h3> <a href= "/joinGroup" > Join Groups </a> </h3>
+<h3> <a href= "/createGroup" > Create a Group</a> </h3>
+<h3> <a href= "/updateGroup" > Change Group Name</a> </h3>
+
+
+<div class= "allGroupsInfo">
+    <h3>Group Names: </h3>
+    <table class= "allGroups-info-table">
+        <tr>
+            <th>Title: </th>
+        </tr>
+        <tr class="allGroups-info-table-body">
+            {{#each group}}
+            <tr>
+                <td><h2 class="singleGroup-name" id={{groupID}}> {{groupName}} </h2> </td>
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+</div>
+
+
+</html>

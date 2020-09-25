@@ -1,0 +1,16 @@
+<html>
+
+<h3>Delete Group</h3>
+<form id="deleteGroup" action="/deleteGroup" method="post">
+    Group: <select name="id">
+        {{#each group}}
+        <option value="{{id}}">{{groupName}}</option>
+        {{/each}}
+    </select><br>
+
+    Password: <input type="password" name="password" placeholder="password" > 
+    <input type="submit" value="Delete">
+ </form>
+<br/>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<h1> {{username.username}} ({{status}}) </h1>
+
+<h3> <a href= "/add_rating" > CREATE Rating Entry </a> </h3>
+<h3> <a href= "/allGroups" > See All Groups </a> </h3>
+<h3> <a href= "/yourGroups" > See Your Groups </a> </h3>
+
+<div class= "rating-container">
+    <h3>My Rating Entries: </h3>
+    <table class= "ratings-table">
+        <tr>
+            <th>Movie: </th>
+            <th>Score: </th>
+            <th>Explanation</th>
+            <th>Options</th>
+        </tr>
+        <tr class="ratings-table-body">
+            {{#each rating_entry}}
+            <tr>
+                <td>{{title}}</td>
+                <td>{{score}}</td>
+                <td>{{explanation}}</td>
+                <td><button onclick="delete_rating({{ratingID}})">Delete</button><a class="update-button"href="/rating/{{ratingID}}">Update</a></td>
+                <td></td>
+            </tr>
+            {{/each}}
+        </tr>
+    </table>
+
+</div>
+
+
+</html>

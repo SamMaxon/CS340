@@ -1,0 +1,17 @@
+<html>
+
+<h3>Join Groups</h3>
+<form id="leaveGroup" action="/leaveGroup" method="post">
+    Group: <select name="id">
+        {{#each group}}
+        <option value="{{id}}">{{groupName}}</option>
+        {{/each}}
+    </select><br>
+
+    Email: <input type="text" name="email" value={{email.email}} readonly> 
+    <input type="submit" value="Leave">
+ </form>
+<br/>
+<h3> <a href= "/yourGroups" > Your Groups </a> </h3>
+
+</html>

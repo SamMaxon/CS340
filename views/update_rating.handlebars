@@ -1,0 +1,11 @@
+<html>
+<h1>Update Rating:</h1>
+
+<form id="update_rating" action="/rating" method="post">
+    Title: {{rating.title}}<br>
+    Score (0-100) <input type="number" name="score" required value="{{rating.score}}" > <br>
+    Explanation: <input type="text"  name="explanation" required value="{{rating.explanation}}" > <br>
+    
+</form>
+<button onclick="updaterating({{rating.ratingID}})">Update</button>
+</html>
