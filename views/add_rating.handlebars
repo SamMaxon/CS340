@@ -1,0 +1,27 @@
+<html>
+
+<h3>ADD NEW RATING:</h3>
+
+{{#each error}}
+    <div class="error-background"> <div class="error"> {{msg}} </div> </div>
+{{/each}}
+
+
+<form id="add_rating" action="/add_rating" method="post">
+    Movie: <select name="id" required> 
+        {{#each movie}}
+        <option value="{{id}}">{{title}}</option>
+        {{/each}}
+    </select><br>
+
+    Score (0-100)<input type="number" name="score" required><br>
+    Explanation <input type="text" name="explanation" required><br>
+    
+    <input type="submit" value="Submit">
+ </form>
+<br/>
+
+    
+
+
+</html>
